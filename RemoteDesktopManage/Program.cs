@@ -26,7 +26,7 @@ namespace RdpTest
                 var process = Process.GetProcessesByName(currProcess.ProcessName);
                 if (process.Length > 1)
                 {
-                    var hWnd = FindWindow(null, "远程桌面管理");
+                    var hWnd = FindWindow(null, "天津海关远程桌面系统");
                     GetWindowThreadProcessId(hWnd, out var pid);
 
                     foreach (var p in process)

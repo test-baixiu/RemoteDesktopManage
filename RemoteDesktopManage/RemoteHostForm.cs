@@ -26,27 +26,27 @@ namespace RdpTest
         {
             //设置主题
             chIsParent.StyleManager = StyleManager;
-            chConnectSession0.StyleManager = StyleManager;
-            chShareAllDisk.StyleManager = StyleManager;
+            //   chConnectSession0.StyleManager = StyleManager;
+            //   chShareAllDisk.StyleManager = StyleManager;
 
             //共享设置
-            chConnectSession0.Checked = GlobalConfig.Instance.ConnectSession0;
-            chShareAllDisk.CheckedChanged += (o, args) => gbDisks.Enabled = !chShareAllDisk.Checked;
-            chShareAllDisk.Checked = GlobalConfig.Instance.ShareAllDisk;
+            //   chConnectSession0.Checked = GlobalConfig.Instance.ConnectSession0;
+            //   chShareAllDisk.CheckedChanged += (o, args) => gbDisks.Enabled = !chShareAllDisk.Checked;
+            //   chShareAllDisk.Checked = GlobalConfig.Instance.ShareAllDisk;
             txtUser.Text = GlobalConfig.Instance.User;
             txtPwd.Text = GlobalConfig.Instance.Pwd;
-            
+
             //可用磁盘
-            flpDisks.Controls.Clear();
+            //   flpDisks.Controls.Clear();
             foreach (var driveInfo in DriveInfo.GetDrives())
             {
-                flpDisks.Controls.Add(new MetroCheckBox
-                {
-                    Text = driveInfo.Name,
-                    AutoSize = true,
-                    StyleManager = StyleManager,
-                    Checked = GlobalConfig.Instance.ShareDiskList.Contains(driveInfo.Name)
-                });
+                //      flpDisks.Controls.Add(new MetroCheckBox
+                //   {
+                //   Text = driveInfo.Name,
+                //   AutoSize = true,
+                //   StyleManager = StyleManager,
+                //   Checked = GlobalConfig.Instance.ShareDiskList.Contains(driveInfo.Name)
+                //  });
             }
 
             //取消显示上下按钮
@@ -86,14 +86,14 @@ namespace RdpTest
             numPort.Value = RemoteHost.Port;
             txtUser.Text = RemoteHost.User;
             txtPwd.Text = RemoteHost.Pwd;
-            txtRemoteProgram.Text = RemoteHost.RemoteProgram;
+            //  txtRemoteProgram.Text = RemoteHost.RemoteProgram;
 
-            chConnectSession0.Checked = RemoteHost.Ext.ConnectSession0;
-            chShareAllDisk.Checked = RemoteHost.Ext.ShareAllDisk;
-            foreach (var ch in flpDisks.Controls.OfType<MetroCheckBox>())
-            {
-                ch.Checked = RemoteHost.Ext.ShareDiskList.Contains(ch.Text);
-            }
+            //   chConnectSession0.Checked = RemoteHost.Ext.ConnectSession0;
+            //  chShareAllDisk.Checked = RemoteHost.Ext.ShareAllDisk;
+            //   foreach (var ch in flpDisks.Controls.OfType<MetroCheckBox>())
+            //   {
+            //   ch.Checked = RemoteHost.Ext.ShareDiskList.Contains(ch.Text);
+            //  }
 
             lbCopy.Visible = true; //显示复制按钮
         }
@@ -155,12 +155,12 @@ namespace RdpTest
                 host.Port = Convert.ToInt32(numPort.Value);
                 host.User = txtUser.Text.Trim();
                 host.Pwd = txtPwd.Text;
-                host.RemoteProgram = txtRemoteProgram.Text.Trim();
+                //   host.RemoteProgram = txtRemoteProgram.Text.Trim();
 
-                host.Ext.ConnectSession0 = chConnectSession0.Checked;
-                host.Ext.ShareAllDisk = chShareAllDisk.Checked;
-                host.Ext.ShareDiskList = flpDisks.Controls.OfType<MetroCheckBox>().Where(ch => ch.Checked)
-                    .Select(ch => ch.Text).ToList();
+                //  host.Ext.ConnectSession0 = chConnectSession0.Checked;
+                //  host.Ext.ShareAllDisk = chShareAllDisk.Checked;
+                //   host.Ext.ShareDiskList = flpDisks.Controls.OfType<MetroCheckBox>().Where(ch => ch.Checked)
+                //    .Select(ch => ch.Text).ToList();
 
                 host.ExtJson = JsonConvert.SerializeObject(host.Ext);
             }

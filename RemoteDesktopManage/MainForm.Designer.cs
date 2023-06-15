@@ -33,11 +33,11 @@
             this.pageMain = new System.Windows.Forms.TabPage();
             this.panelBody = new System.Windows.Forms.Panel();
             this.pnlSetting = new MetroFramework.Controls.MetroPanel();
-            this.btnAbout = new MetroFramework.Controls.MetroLink();
-            this.btnGlobalSetting = new MetroFramework.Controls.MetroLink();
+            // this.btnAbout = new MetroFramework.Controls.MetroLink();
+            // this.btnGlobalSetting = new MetroFramework.Controls.MetroLink();
             this.btnAddRemoteHost = new MetroFramework.Controls.MetroLink();
-            this.btnRefresh = new MetroFramework.Controls.MetroLink();
-            this.btnChangeStyle = new MetroFramework.Controls.MetroTile();
+            // this.btnRefresh = new MetroFramework.Controls.MetroLink();
+            // this.btnChangeStyle = new MetroFramework.Controls.MetroTile();
             this.menuHost = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tmiHostEdit = new System.Windows.Forms.ToolStripMenuItem();
             this.tmiHostDelete = new System.Windows.Forms.ToolStripMenuItem();
@@ -97,11 +97,11 @@
             // 
             // pnlSetting
             // 
-            this.pnlSetting.Controls.Add(this.btnAbout);
-            this.pnlSetting.Controls.Add(this.btnGlobalSetting);
+            // this.pnlSetting.Controls.Add(this.btnAbout);
+            // this.pnlSetting.Controls.Add(this.btnGlobalSetting);
             this.pnlSetting.Controls.Add(this.btnAddRemoteHost);
-            this.pnlSetting.Controls.Add(this.btnRefresh);
-            this.pnlSetting.Controls.Add(this.btnChangeStyle);
+            // this.pnlSetting.Controls.Add(this.btnRefresh);
+            // this.pnlSetting.Controls.Add(this.btnChangeStyle);
             this.pnlSetting.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlSetting.HorizontalScrollbarBarColor = true;
             this.pnlSetting.HorizontalScrollbarHighlightOnWheel = false;
@@ -116,27 +116,27 @@
             // 
             // btnAbout
             // 
-            this.btnAbout.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnAbout.Location = new System.Drawing.Point(355, 0);
-            this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Size = new System.Drawing.Size(67, 37);
-            this.btnAbout.TabIndex = 5;
-            this.btnAbout.Text = "关于";
-            this.btnAbout.UseSelectable = true;
-            this.btnAbout.UseVisualStyleBackColor = true;
-            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
+            // this.btnAbout.Dock = System.Windows.Forms.DockStyle.Left;
+            // this.btnAbout.Location = new System.Drawing.Point(355, 0);
+            // this.btnAbout.Name = "btnAbout";
+            // this.btnAbout.Size = new System.Drawing.Size(67, 37);
+            // this.btnAbout.TabIndex = 5;
+            // this.btnAbout.Text = "关于";
+            // this.btnAbout.UseSelectable = true;
+            //  this.btnAbout.UseVisualStyleBackColor = true;
+            // this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
             // btnGlobalSetting
             // 
-            this.btnGlobalSetting.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnGlobalSetting.Location = new System.Drawing.Point(268, 0);
-            this.btnGlobalSetting.Name = "btnGlobalSetting";
-            this.btnGlobalSetting.Size = new System.Drawing.Size(87, 37);
-            this.btnGlobalSetting.TabIndex = 7;
-            this.btnGlobalSetting.Text = "全局配置";
-            this.btnGlobalSetting.UseSelectable = true;
-            this.btnGlobalSetting.UseVisualStyleBackColor = true;
-            this.btnGlobalSetting.Click += new System.EventHandler(this.btnGlobalSetting_Click);
+            // this.btnGlobalSetting.Dock = System.Windows.Forms.DockStyle.Left;
+            // this.btnGlobalSetting.Location = new System.Drawing.Point(268, 0);
+            // this.btnGlobalSetting.Name = "btnGlobalSetting";
+            // this.btnGlobalSetting.Size = new System.Drawing.Size(87, 37);
+            // this.btnGlobalSetting.TabIndex = 7;
+            // this.btnGlobalSetting.Text = "全局配置";
+            // this.btnGlobalSetting.UseSelectable = true;
+            // this.btnGlobalSetting.UseVisualStyleBackColor = true;
+            // this.btnGlobalSetting.Click += new System.EventHandler(this.btnGlobalSetting_Click);
             // 
             // btnAddRemoteHost
             // 
@@ -152,28 +152,28 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnRefresh.Location = new System.Drawing.Point(85, 0);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(67, 37);
-            this.btnRefresh.TabIndex = 3;
-            this.btnRefresh.Text = "刷新";
-            this.btnRefresh.UseSelectable = true;
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Left;
+            // this.btnRefresh.Location = new System.Drawing.Point(85, 0);
+            // this.btnRefresh.Name = "btnRefresh";
+            // this.btnRefresh.Size = new System.Drawing.Size(67, 37);
+            // this.btnRefresh.TabIndex = 3;
+            // this.btnRefresh.Text = "刷新";
+            //  this.btnRefresh.UseSelectable = true;
+            // this.btnRefresh.UseVisualStyleBackColor = true;
+            // this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnChangeStyle
             // 
-            this.btnChangeStyle.ActiveControl = null;
-            this.btnChangeStyle.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnChangeStyle.Location = new System.Drawing.Point(0, 0);
-            this.btnChangeStyle.Name = "btnChangeStyle";
-            this.btnChangeStyle.Size = new System.Drawing.Size(85, 37);
-            this.btnChangeStyle.TabIndex = 2;
-            this.btnChangeStyle.Text = "切换主题";
-            this.btnChangeStyle.UseSelectable = true;
-            this.btnChangeStyle.UseVisualStyleBackColor = true;
-            this.btnChangeStyle.Click += new System.EventHandler(this.btnChangeStyle_Click);
+            // this.btnChangeStyle.ActiveControl = null;
+            // this.btnChangeStyle.Dock = System.Windows.Forms.DockStyle.Left;
+            // this.btnChangeStyle.Location = new System.Drawing.Point(0, 0);
+            // this.btnChangeStyle.Name = "btnChangeStyle";
+            // this.btnChangeStyle.Size = new System.Drawing.Size(85, 37);
+            // this.btnChangeStyle.TabIndex = 2;
+            // this.btnChangeStyle.Text = "切换主题";
+            // this.btnChangeStyle.UseSelectable = true;
+            // this.btnChangeStyle.UseVisualStyleBackColor = true;
+            // this.btnChangeStyle.Click += new System.EventHandler(this.btnChangeStyle_Click);
             // 
             // menuHost
             // 
@@ -273,7 +273,7 @@
             this.Name = "MainForm";
             this.ShowIcon = false;
             this.Style = MetroFramework.MetroColorStyle.Default;
-            this.Text = "远程桌面管理";
+            this.Text = "天津海关远程桌面系统";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Activated += new System.EventHandler(this.MainForm_Activated);
             this.Deactivate += new System.EventHandler(this.MainForm_Deactivate);
@@ -296,8 +296,8 @@
         private MetroFramework.Controls.MetroTabControl tabMain;
         private System.Windows.Forms.TabPage pageMain;
         private MetroFramework.Controls.MetroPanel pnlSetting;
-        private MetroFramework.Controls.MetroTile btnChangeStyle;
-        private MetroFramework.Controls.MetroLink btnRefresh;
+        // private MetroFramework.Controls.MetroTile btnChangeStyle;
+        // private MetroFramework.Controls.MetroLink btnRefresh;
         private MetroFramework.Controls.MetroLink btnAddRemoteHost;
         private System.Windows.Forms.Panel panelBody;
         private System.Windows.Forms.ContextMenuStrip menuHost;
@@ -308,8 +308,8 @@
         private System.Windows.Forms.ContextMenuStrip menuTabPage;
         private System.Windows.Forms.ToolStripMenuItem tmiCloseHost;
         private MetroFramework.Components.MetroStyleManager metroStyleManager;
-        private MetroFramework.Controls.MetroLink btnAbout;
-        private MetroFramework.Controls.MetroLink btnGlobalSetting;
+        // private MetroFramework.Controls.MetroLink btnAbout;
+        // private MetroFramework.Controls.MetroLink btnGlobalSetting;
         private System.Windows.Forms.ContextMenuStrip menuGroup;
         private System.Windows.Forms.ToolStripMenuItem tmiGropEdit;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;

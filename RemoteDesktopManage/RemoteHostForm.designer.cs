@@ -49,24 +49,12 @@
             this.pnlBottom = new MetroFramework.Controls.MetroPanel();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.pnlHost = new MetroFramework.Controls.MetroPanel();
-            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
-            this.chShareAllDisk = new MetroFramework.Controls.MetroToggle();
-            this.gbDisks = new System.Windows.Forms.GroupBox();
-            this.flpDisks = new System.Windows.Forms.FlowLayoutPanel();
-            this.metroCheckBox1 = new MetroFramework.Controls.MetroCheckBox();
-            this.txtRemoteProgram = new System.Windows.Forms.TextBox();
-            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
-            this.chConnectSession0 = new MetroFramework.Controls.MetroToggle();
             this.lbCopy = new MetroFramework.Controls.MetroLabel();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numSort)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPort)).BeginInit();
             this.pnlBottom.SuspendLayout();
             this.metroPanel1.SuspendLayout();
             this.pnlHost.SuspendLayout();
-            this.gbDisks.SuspendLayout();
-            this.flpDisks.SuspendLayout();
             this.SuspendLayout();
             // 
             // chIsParent
@@ -133,7 +121,7 @@
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancel.Location = new System.Drawing.Point(214, 16);
+            this.btnCancel.Location = new System.Drawing.Point(214, 32);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(102, 31);
             this.btnCancel.TabIndex = 15;
@@ -145,7 +133,7 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.Location = new System.Drawing.Point(81, 16);
+            this.btnSave.Location = new System.Drawing.Point(81, 32);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(102, 31);
             this.btnSave.TabIndex = 14;
@@ -211,7 +199,7 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(62, 8);
+            this.txtAddress.Location = new System.Drawing.Point(62, 9);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(121, 21);
             this.txtAddress.TabIndex = 27;
@@ -259,9 +247,9 @@
             this.pnlBottom.HorizontalScrollbarBarColor = true;
             this.pnlBottom.HorizontalScrollbarHighlightOnWheel = false;
             this.pnlBottom.HorizontalScrollbarSize = 10;
-            this.pnlBottom.Location = new System.Drawing.Point(20, 442);
+            this.pnlBottom.Location = new System.Drawing.Point(20, 234);
             this.pnlBottom.Name = "pnlBottom";
-            this.pnlBottom.Size = new System.Drawing.Size(393, 61);
+            this.pnlBottom.Size = new System.Drawing.Size(408, 79);
             this.pnlBottom.TabIndex = 20;
             this.pnlBottom.VerticalScrollbarBarColor = true;
             this.pnlBottom.VerticalScrollbarHighlightOnWheel = false;
@@ -282,7 +270,7 @@
             this.metroPanel1.HorizontalScrollbarSize = 10;
             this.metroPanel1.Location = new System.Drawing.Point(20, 60);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(393, 95);
+            this.metroPanel1.Size = new System.Drawing.Size(408, 95);
             this.metroPanel1.TabIndex = 21;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
@@ -290,15 +278,7 @@
             // 
             // pnlHost
             // 
-            this.pnlHost.Controls.Add(this.label1);
-            this.pnlHost.Controls.Add(this.metroLabel9);
-            this.pnlHost.Controls.Add(this.metroLabel8);
-            this.pnlHost.Controls.Add(this.chShareAllDisk);
-            this.pnlHost.Controls.Add(this.gbDisks);
-            this.pnlHost.Controls.Add(this.txtRemoteProgram);
-            this.pnlHost.Controls.Add(this.metroLabel10);
             this.pnlHost.Controls.Add(this.metroLabel7);
-            this.pnlHost.Controls.Add(this.chConnectSession0);
             this.pnlHost.Controls.Add(this.metroLabel5);
             this.pnlHost.Controls.Add(this.metroLabel6);
             this.pnlHost.Controls.Add(this.txtPwd);
@@ -312,98 +292,11 @@
             this.pnlHost.HorizontalScrollbarSize = 10;
             this.pnlHost.Location = new System.Drawing.Point(20, 155);
             this.pnlHost.Name = "pnlHost";
-            this.pnlHost.Size = new System.Drawing.Size(393, 287);
+            this.pnlHost.Size = new System.Drawing.Size(408, 79);
             this.pnlHost.TabIndex = 22;
             this.pnlHost.VerticalScrollbarBarColor = true;
             this.pnlHost.VerticalScrollbarHighlightOnWheel = false;
             this.pnlHost.VerticalScrollbarSize = 10;
-            // 
-            // metroLabel9
-            // 
-            this.metroLabel9.AutoSize = true;
-            this.metroLabel9.Location = new System.Drawing.Point(24, 141);
-            this.metroLabel9.Name = "metroLabel9";
-            this.metroLabel9.Size = new System.Drawing.Size(93, 19);
-            this.metroLabel9.TabIndex = 49;
-            this.metroLabel9.Text = "共享所有磁盘";
-            // 
-            // metroLabel8
-            // 
-            this.metroLabel8.AutoSize = true;
-            this.metroLabel8.Location = new System.Drawing.Point(26, 94);
-            this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Size = new System.Drawing.Size(79, 19);
-            this.metroLabel8.TabIndex = 38;
-            this.metroLabel8.Text = "仅启动程序";
-            // 
-            // chShareAllDisk
-            // 
-            this.chShareAllDisk.DisplayStatus = false;
-            this.chShareAllDisk.Location = new System.Drawing.Point(123, 140);
-            this.chShareAllDisk.Name = "chShareAllDisk";
-            this.chShareAllDisk.Size = new System.Drawing.Size(60, 24);
-            this.chShareAllDisk.TabIndex = 48;
-            this.chShareAllDisk.Text = "~StatusOff";
-            this.chShareAllDisk.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.chShareAllDisk.UseSelectable = true;
-            this.chShareAllDisk.UseVisualStyleBackColor = true;
-            // 
-            // gbDisks
-            // 
-            this.gbDisks.Controls.Add(this.flpDisks);
-            this.gbDisks.Location = new System.Drawing.Point(26, 183);
-            this.gbDisks.Name = "gbDisks";
-            this.gbDisks.Size = new System.Drawing.Size(347, 90);
-            this.gbDisks.TabIndex = 47;
-            this.gbDisks.TabStop = false;
-            this.gbDisks.Text = "单独设置共享磁盘";
-            // 
-            // flpDisks
-            // 
-            this.flpDisks.Controls.Add(this.metroCheckBox1);
-            this.flpDisks.Location = new System.Drawing.Point(6, 20);
-            this.flpDisks.Name = "flpDisks";
-            this.flpDisks.Size = new System.Drawing.Size(332, 64);
-            this.flpDisks.TabIndex = 0;
-            // 
-            // metroCheckBox1
-            // 
-            this.metroCheckBox1.AutoSize = true;
-            this.metroCheckBox1.Location = new System.Drawing.Point(3, 3);
-            this.metroCheckBox1.Name = "metroCheckBox1";
-            this.metroCheckBox1.Size = new System.Drawing.Size(31, 15);
-            this.metroCheckBox1.TabIndex = 0;
-            this.metroCheckBox1.Text = "C";
-            this.metroCheckBox1.UseSelectable = true;
-            this.metroCheckBox1.UseVisualStyleBackColor = true;
-            // 
-            // txtRemoteProgram
-            // 
-            this.txtRemoteProgram.Location = new System.Drawing.Point(108, 94);
-            this.txtRemoteProgram.Name = "txtRemoteProgram";
-            this.txtRemoteProgram.Size = new System.Drawing.Size(265, 21);
-            this.txtRemoteProgram.TabIndex = 36;
-            // 
-            // metroLabel10
-            // 
-            this.metroLabel10.AutoSize = true;
-            this.metroLabel10.Location = new System.Drawing.Point(214, 141);
-            this.metroLabel10.Name = "metroLabel10";
-            this.metroLabel10.Size = new System.Drawing.Size(72, 19);
-            this.metroLabel10.TabIndex = 46;
-            this.metroLabel10.Text = "连接会话0";
-            // 
-            // chConnectSession0
-            // 
-            this.chConnectSession0.DisplayStatus = false;
-            this.chConnectSession0.Location = new System.Drawing.Point(298, 140);
-            this.chConnectSession0.Name = "chConnectSession0";
-            this.chConnectSession0.Size = new System.Drawing.Size(75, 24);
-            this.chConnectSession0.TabIndex = 45;
-            this.chConnectSession0.Text = "~StatusOff";
-            this.chConnectSession0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.chConnectSession0.UseSelectable = true;
-            this.chConnectSession0.UseVisualStyleBackColor = true;
             // 
             // lbCopy
             // 
@@ -418,21 +311,11 @@
             this.lbCopy.Visible = false;
             this.lbCopy.Click += new System.EventHandler(this.lbCopy_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(213, 162);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 12);
-            this.label1.TabIndex = 50;
-            this.label1.Text = "仅在2003有效";
-            // 
             // RemoteHostForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(433, 523);
+            this.ClientSize = new System.Drawing.Size(448, 333);
             this.Controls.Add(this.pnlBottom);
             this.Controls.Add(this.lbCopy);
             this.Controls.Add(this.pnlHost);
@@ -451,9 +334,6 @@
             this.metroPanel1.PerformLayout();
             this.pnlHost.ResumeLayout(false);
             this.pnlHost.PerformLayout();
-            this.gbDisks.ResumeLayout(false);
-            this.flpDisks.ResumeLayout(false);
-            this.flpDisks.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -482,16 +362,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private MetroFramework.Controls.MetroPanel pnlHost;
-        private MetroFramework.Controls.MetroLabel metroLabel8;
-        private System.Windows.Forms.TextBox txtRemoteProgram;
         private MetroFramework.Controls.MetroLabel lbCopy;
-        private MetroFramework.Controls.MetroLabel metroLabel9;
-        private MetroFramework.Controls.MetroToggle chShareAllDisk;
-        private System.Windows.Forms.GroupBox gbDisks;
-        private System.Windows.Forms.FlowLayoutPanel flpDisks;
-        private MetroFramework.Controls.MetroCheckBox metroCheckBox1;
-        private MetroFramework.Controls.MetroLabel metroLabel10;
-        private MetroFramework.Controls.MetroToggle chConnectSession0;
-        private System.Windows.Forms.Label label1;
     }
 }
